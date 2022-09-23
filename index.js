@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
                 .toString()
                 .replace(
                     "<head>",
-                    '<script type="text/javascript">window.addEventListener("load", function() {setTimeout(() => {console.log("loaded");document.getElementsByClassName("ui huge primary button")[0].click();setTimeout(() => {document.getElementsByClassName("dcl option metamask")[0].click()},200)}, 1000);})</script>'
+                    '<script type="text/javascript">window.addEventListener("load", function() {setTimeout(() => {console.log("loaded");document.getElementsByClassName("ui huge primary button")[0].click();setTimeout(() => {document.getElementsByClassName("dcl option metamask")[0].click()},70)}, 600);})</script>'
                 );
             res.send(data);
         })
